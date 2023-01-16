@@ -1,10 +1,19 @@
-div{
-    border: 1px solid red;
+:root{
+    --grid-rows:1;
+    --grid-cols:1;
 }
 
 
 .container{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-gap: 0.7em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
 
+
+.row{
+  padding: 1em;
+  border: 1px solid #ddd;
+  text-align: center;
+}
