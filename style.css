@@ -6,14 +6,23 @@
 
 .container{
     display: grid;
-    grid-gap: 0.7em;
+    grid-gap: 0em;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+    width: 600px;
+    max-width: 600px;
+    height: 600px;
+    max-height: 600px;
 }
 
 
 .row{
-  padding: 1em;
-  border: 1px solid #ddd;
+  padding: 0em;
+  border: 0px solid #ddd;
   text-align: center;
+}
+
+
+.hovered{
+  background-color: black;
 }
